@@ -1,0 +1,10 @@
+EXTRA_CFLAGS		+= -Iarch/arm/mach-tegra
+obj-$(CONFIG_XMM6260)	+= xmm6260.o
+obj-$(CONFIG_XMM6260)	+= xmm6260_pwr.o
+obj-$(CONFIG_XMM6260)	+= xmm6260_ril.o
+obj-$(CONFIG_XMM6260)	+= xmm6260_ril_prox.o
+obj-$(CONFIG_XMM6260)	+= xmm6260_ril_sim.o
+obj-$(CONFIG_XMM6260)	+= xmm6260_ril_crash.o
+obj-$(CONFIG_XMM6260)	+= xmm6260_acm.o
+obj-$(CONFIG_XMM6260)	+= xmm6260_net.o
+obj-$(CONFIG_XMM6260)	+= xmm6260_gpio.o

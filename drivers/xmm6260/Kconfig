@@ -1,0 +1,29 @@
+config XMM6260
+	tristate "IMC XMM6260 driver for ASUS TF300TG modem"
+	default y
+	depends on ARCH_TEGRA && MACH_CARDHU && USB
+
+config XMM_DEBUG
+	bool "IMC XMM6260 debug messages"
+	default n
+	depends on XMM6260
+
+config XMM_PWR_DEBUG
+	bool "IMC XMM6260 power debug messages"
+	default n
+	depends on XMM6260 && XMM_DEBUG
+
+config XMM_RIL_DEBUG
+	bool "IMC XMM6260 power debug messages"
+	default n
+	depends on XMM6260 && XMM_DEBUG
+
+config XMM_ACM_DEBUG
+	bool "IMC XMM6260 power debug messages"
+	default n
+	depends on XMM6260 && XMM_DEBUG
+
+config XMM_NET_DEBUG
+	bool "IMC XMM6260 power debug messages"
+	default n
+	depends on XMM6260 && XMM_DEBUG
